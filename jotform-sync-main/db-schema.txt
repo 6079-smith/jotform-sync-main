@@ -1,0 +1,413 @@
+DATABASE SCHEMA EXPORT
+======================
+Generated: 2025-05-26T14:51:22.855Z
+
+Total Tables: 18
+
+TABLE: enum_cures
+==================================================
+
+COLUMNS:
+  id [integer] DEFAULT nextval('enum_cures_id_seq'::regclass) NOT NULL
+  name [character varying(255)] NOT NULL
+  created_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+  updated_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+
+PRIMARY KEYS:
+  (id)
+
+FOREIGN KEYS:
+  No foreign keys defined
+
+INDEXES:
+  enum_cures_name_key: CREATE UNIQUE INDEX enum_cures_name_key ON public.enum_cures USING btree (name)
+  enum_cures_pkey: CREATE UNIQUE INDEX enum_cures_pkey ON public.enum_cures USING btree (id)
+
+
+TABLE: enum_experience_levels
+==================================================
+
+COLUMNS:
+  id [integer] DEFAULT nextval('enum_experience_levels_id_seq'::regclass) NOT NULL
+  name [character varying(255)] NOT NULL
+  created_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+  updated_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+
+PRIMARY KEYS:
+  (id)
+
+FOREIGN KEYS:
+  No foreign keys defined
+
+INDEXES:
+  enum_experience_levels_name_key: CREATE UNIQUE INDEX enum_experience_levels_name_key ON public.enum_experience_levels USING btree (name)
+  enum_experience_levels_pkey: CREATE UNIQUE INDEX enum_experience_levels_pkey ON public.enum_experience_levels USING btree (id)
+
+
+TABLE: enum_grinds
+==================================================
+
+COLUMNS:
+  id [integer] DEFAULT nextval('enum_grinds_id_seq'::regclass) NOT NULL
+  name [character varying(255)] NOT NULL
+  created_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+  updated_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+
+PRIMARY KEYS:
+  (id)
+
+FOREIGN KEYS:
+  No foreign keys defined
+
+INDEXES:
+  enum_grinds_name_key: CREATE UNIQUE INDEX enum_grinds_name_key ON public.enum_grinds USING btree (name)
+  enum_grinds_pkey: CREATE UNIQUE INDEX enum_grinds_pkey ON public.enum_grinds USING btree (id)
+
+
+TABLE: enum_moisture_levels
+==================================================
+
+COLUMNS:
+  id [integer] DEFAULT nextval('enum_moisture_levels_id_seq'::regclass) NOT NULL
+  name [character varying(255)] NOT NULL
+  created_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+  updated_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+
+PRIMARY KEYS:
+  (id)
+
+FOREIGN KEYS:
+  No foreign keys defined
+
+INDEXES:
+  enum_moisture_levels_name_key: CREATE UNIQUE INDEX enum_moisture_levels_name_key ON public.enum_moisture_levels USING btree (name)
+  enum_moisture_levels_pkey: CREATE UNIQUE INDEX enum_moisture_levels_pkey ON public.enum_moisture_levels USING btree (id)
+
+
+TABLE: enum_nicotine_levels
+==================================================
+
+COLUMNS:
+  id [integer] DEFAULT nextval('enum_nicotine_levels_id_seq'::regclass) NOT NULL
+  name [character varying(255)] NOT NULL
+  created_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+  updated_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+
+PRIMARY KEYS:
+  (id)
+
+FOREIGN KEYS:
+  No foreign keys defined
+
+INDEXES:
+  enum_nicotine_levels_name_key: CREATE UNIQUE INDEX enum_nicotine_levels_name_key ON public.enum_nicotine_levels USING btree (name)
+  enum_nicotine_levels_pkey: CREATE UNIQUE INDEX enum_nicotine_levels_pkey ON public.enum_nicotine_levels USING btree (id)
+
+
+TABLE: enum_product_brands
+==================================================
+
+COLUMNS:
+  id [integer] DEFAULT nextval('enum_product_brands_id_seq'::regclass) NOT NULL
+  name [character varying(255)] NOT NULL
+  created_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+  updated_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+
+PRIMARY KEYS:
+  (id)
+
+FOREIGN KEYS:
+  No foreign keys defined
+
+INDEXES:
+  enum_product_brands_name_key: CREATE UNIQUE INDEX enum_product_brands_name_key ON public.enum_product_brands USING btree (name)
+  enum_product_brands_pkey: CREATE UNIQUE INDEX enum_product_brands_pkey ON public.enum_product_brands USING btree (id)
+
+
+TABLE: enum_product_types
+==================================================
+
+COLUMNS:
+  id [integer] DEFAULT nextval('enum_product_types_id_seq'::regclass) NOT NULL
+  name [character varying(255)] NOT NULL
+  created_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+  updated_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+
+PRIMARY KEYS:
+  (id)
+
+FOREIGN KEYS:
+  No foreign keys defined
+
+INDEXES:
+  enum_product_types_name_key: CREATE UNIQUE INDEX enum_product_types_name_key ON public.enum_product_types USING btree (name)
+  enum_product_types_pkey: CREATE UNIQUE INDEX enum_product_types_pkey ON public.enum_product_types USING btree (id)
+
+
+TABLE: enum_snuff_types
+==================================================
+
+COLUMNS:
+  id [integer] DEFAULT nextval('enum_snuff_types_id_seq'::regclass) NOT NULL
+  name [character varying(255)] NOT NULL
+  created_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+  updated_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+
+PRIMARY KEYS:
+  (id)
+
+FOREIGN KEYS:
+  No foreign keys defined
+
+INDEXES:
+  enum_snuff_types_name_key: CREATE UNIQUE INDEX enum_snuff_types_name_key ON public.enum_snuff_types USING btree (name)
+  enum_snuff_types_pkey: CREATE UNIQUE INDEX enum_snuff_types_pkey ON public.enum_snuff_types USING btree (id)
+
+
+TABLE: enum_tasting_notes
+==================================================
+
+COLUMNS:
+  id [integer] DEFAULT nextval('enum_tasting_notes_id_seq'::regclass) NOT NULL
+  name [character varying(255)] NOT NULL
+  created_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+  updated_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+
+PRIMARY KEYS:
+  (id)
+
+FOREIGN KEYS:
+  No foreign keys defined
+
+INDEXES:
+  enum_tasting_notes_name_key: CREATE UNIQUE INDEX enum_tasting_notes_name_key ON public.enum_tasting_notes USING btree (name)
+  enum_tasting_notes_pkey: CREATE UNIQUE INDEX enum_tasting_notes_pkey ON public.enum_tasting_notes USING btree (id)
+
+
+TABLE: enum_tobacco_types
+==================================================
+
+COLUMNS:
+  id [integer] DEFAULT nextval('enum_tobacco_types_id_seq'::regclass) NOT NULL
+  name [character varying(255)] NOT NULL
+  created_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+  updated_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+
+PRIMARY KEYS:
+  (id)
+
+FOREIGN KEYS:
+  No foreign keys defined
+
+INDEXES:
+  enum_tobacco_types_name_key: CREATE UNIQUE INDEX enum_tobacco_types_name_key ON public.enum_tobacco_types USING btree (name)
+  enum_tobacco_types_pkey: CREATE UNIQUE INDEX enum_tobacco_types_pkey ON public.enum_tobacco_types USING btree (id)
+
+
+TABLE: jotform
+==================================================
+
+COLUMNS:
+  submission_id [character varying(20)] NOT NULL
+  reviewer [character varying(50)]
+  select_product [text]
+  snuff_type [character varying(20)]
+  tobacco [text]
+  moisture [character varying(20)]
+  grind [character varying(20)]
+  nicotine [character varying(20)]
+  ease_of_use [character varying(20)]
+  review [text]
+  star_rating [smallint]
+  cure [text]
+  tasting_notes [text]
+  fermented [boolean] DEFAULT false
+  oral_tobacco [boolean] DEFAULT false
+  artisan [boolean] DEFAULT false
+  rating_boost [smallint]
+  last_updated [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+  raw_json [text]
+  created_at [timestamp without time zone]
+  cleaned_product_title [character varying]
+  status [character varying(40)] DEFAULT 'fetched'::character varying NOT NULL
+  status_updated_at [timestamp with time zone] DEFAULT CURRENT_TIMESTAMP
+
+PRIMARY KEYS:
+  No primary keys defined
+
+FOREIGN KEYS:
+  No foreign keys defined
+
+INDEXES:
+  jotform_submission_id_key: CREATE UNIQUE INDEX jotform_submission_id_key ON public.jotform USING btree (submission_id)
+
+
+TABLE: jotform_shopify
+==================================================
+
+COLUMNS:
+  id [integer] DEFAULT nextval('specifications_staging_id_seq'::regclass) NOT NULL
+  submission_id [character varying] NOT NULL
+  shopify_handle [character varying]
+  product_type [character varying(255)]
+  product_brand [character varying(255)]
+  shopify_title [text]
+
+PRIMARY KEYS:
+  (id)
+
+FOREIGN KEYS:
+  No foreign keys defined
+
+INDEXES:
+  unique_submission_id: CREATE UNIQUE INDEX unique_submission_id ON public.jotform_shopify USING btree (submission_id)
+  jotform_shopify_pkey: CREATE UNIQUE INDEX jotform_shopify_pkey ON public.jotform_shopify USING btree (id)
+
+
+TABLE: spec_cures
+==================================================
+
+COLUMNS:
+  specification_id [integer] NOT NULL
+  enum_cure_id [integer] NOT NULL
+
+PRIMARY KEYS:
+  (specification_id, enum_cure_id)
+
+FOREIGN KEYS:
+  enum_cure_id -> enum_cures(id)
+  specification_id -> specifications(id)
+
+INDEXES:
+  spec_cures_pkey: CREATE UNIQUE INDEX spec_cures_pkey ON public.spec_cures USING btree (specification_id, enum_cure_id)
+
+
+TABLE: spec_tasting_notes
+==================================================
+
+COLUMNS:
+  specification_id [integer] NOT NULL
+  enum_tasting_note_id [integer] NOT NULL
+
+PRIMARY KEYS:
+  (specification_id, enum_tasting_note_id)
+
+FOREIGN KEYS:
+  enum_tasting_note_id -> enum_tasting_notes(id)
+  specification_id -> specifications(id)
+
+INDEXES:
+  spec_tasting_notes_pkey: CREATE UNIQUE INDEX spec_tasting_notes_pkey ON public.spec_tasting_notes USING btree (specification_id, enum_tasting_note_id)
+
+
+TABLE: spec_tobacco_types
+==================================================
+
+COLUMNS:
+  specification_id [integer] NOT NULL
+  enum_tobacco_type_id [integer] NOT NULL
+
+PRIMARY KEYS:
+  (specification_id, enum_tobacco_type_id)
+
+FOREIGN KEYS:
+  enum_tobacco_type_id -> enum_tobacco_types(id)
+  specification_id -> specifications(id)
+
+INDEXES:
+  spec_tobacco_types_pkey: CREATE UNIQUE INDEX spec_tobacco_types_pkey ON public.spec_tobacco_types USING btree (specification_id, enum_tobacco_type_id)
+
+
+TABLE: specifications
+==================================================
+
+COLUMNS:
+  id [integer] DEFAULT nextval('specifications_id_seq'::regclass) NOT NULL
+  shopify_handle [character varying(255)] NOT NULL
+  product_type_id [integer] NOT NULL
+  is_fermented [boolean] DEFAULT false
+  is_oral_tobacco [boolean] DEFAULT false
+  is_artisan [boolean] DEFAULT false
+  grind_id [integer] NOT NULL
+  nicotine_level_id [integer] NOT NULL
+  experience_level_id [integer] NOT NULL
+  review [text]
+  star_rating [integer] DEFAULT 0
+  rating_boost [integer] DEFAULT 0
+  created_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+  updated_at [timestamp without time zone] DEFAULT CURRENT_TIMESTAMP
+  user_id [uuid] NOT NULL
+  moisture_level_id [integer] NOT NULL
+  product_brand_id [integer] NOT NULL
+  submission_id [character varying(20)]
+
+PRIMARY KEYS:
+  (id)
+
+FOREIGN KEYS:
+  product_brand_id -> enum_product_brands(id)
+  experience_level_id -> enum_experience_levels(id)
+  grind_id -> enum_grinds(id)
+  moisture_level_id -> enum_moisture_levels(id)
+  nicotine_level_id -> enum_nicotine_levels(id)
+  product_type_id -> enum_product_types(id)
+  user_id -> users(id)
+
+INDEXES:
+  specifications_pkey: CREATE UNIQUE INDEX specifications_pkey ON public.specifications USING btree (id)
+  idx_specifications_experience_level_id: CREATE INDEX idx_specifications_experience_level_id ON public.specifications USING btree (experience_level_id)
+  idx_specifications_grind_id: CREATE INDEX idx_specifications_grind_id ON public.specifications USING btree (grind_id)
+  idx_specifications_nicotine_level_id: CREATE INDEX idx_specifications_nicotine_level_id ON public.specifications USING btree (nicotine_level_id)
+  idx_specifications_product_brand_id: CREATE INDEX idx_specifications_product_brand_id ON public.specifications USING btree (product_brand_id)
+  idx_specifications_product_type_id: CREATE INDEX idx_specifications_product_type_id ON public.specifications USING btree (product_type_id)
+  idx_specifications_shopify_handle: CREATE INDEX idx_specifications_shopify_handle ON public.specifications USING btree (shopify_handle)
+  specifications_submission_id_key: CREATE UNIQUE INDEX specifications_submission_id_key ON public.specifications USING btree (submission_id)
+  idx_specifications_submission_id: CREATE INDEX idx_specifications_submission_id ON public.specifications USING btree (submission_id)
+
+
+TABLE: transform_log
+==================================================
+
+COLUMNS:
+  id [integer] DEFAULT nextval('transform_log_id_seq'::regclass) NOT NULL
+  log_time [timestamp with time zone] DEFAULT CURRENT_TIMESTAMP
+  submission_id [text]
+  message [text]
+  field [text]
+  value [text]
+
+PRIMARY KEYS:
+  (id)
+
+FOREIGN KEYS:
+  No foreign keys defined
+
+INDEXES:
+  transform_log_pkey: CREATE UNIQUE INDEX transform_log_pkey ON public.transform_log USING btree (id)
+
+
+TABLE: users
+==================================================
+
+COLUMNS:
+  id [uuid] DEFAULT gen_random_uuid() NOT NULL
+  email [text] NOT NULL
+  name [text]
+  role [text] NOT NULL
+  created_at [timestamp with time zone] DEFAULT CURRENT_TIMESTAMP
+  slack_userid [character varying(30)]
+  jotform_name [character varying(100)]
+
+PRIMARY KEYS:
+  (id)
+
+FOREIGN KEYS:
+  No foreign keys defined
+
+INDEXES:
+  users_pkey: CREATE UNIQUE INDEX users_pkey ON public.users USING btree (id)
+  idx_user_email: CREATE INDEX idx_user_email ON public.users USING btree (email)
+  idx_user_slack_userid: CREATE INDEX idx_user_slack_userid ON public.users USING btree (slack_userid)
+  users_email_key: CREATE UNIQUE INDEX users_email_key ON public.users USING btree (email)
+
+
